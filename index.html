@@ -228,21 +228,14 @@
         box-shadow: 0 2px 8px rgba(180, 120, 80, 0.25);
     }
 
-    .slide video {
-        pointer-events: none;
-    }
-
-    .slide video {
-        touch-action: none !important;
-    }
-
-    /* щоб відео не починало drag-ефект і не заважало свайпу */
-    .slide video {
-        -webkit-user-drag: none;
-        user-select: none;
-        touch-action: none;
-        /* важливо для деяких браузерів: дозволяє нашій логіці контролювати свайп */
-    }
+.slide video {
+    position: relative;
+    z-index: 5;
+    background-color: #000; /* важливо для Safari */
+}
+.carousel-arrow {
+    z-index: 10;
+}
 
 
 
