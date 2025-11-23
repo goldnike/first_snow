@@ -550,6 +550,61 @@
         <textarea id="comment" placeholder="Ваш коментар" required></textarea>
         <button type="submit">Відправити</button>
     </form>
+<script>
+ (function () {
+  const track = document.querySelector(".carousel-track");
+  const slides = document.querySelectorAll(".slide");
+  let index = 0;
+
+  let startX = 0;
+  let currentX = 0;
+  let isDragging = false;
+
+  function update() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+  }
+
+  function onTouchStart(e) {
+    startX = e.touches[0].clientX;
+    currentX = startX;
+    isDragging = true;
+  }
+
+  function onTouchMove(e) {
+    if (!isDragging) return;
+    currentX = e.touches[0].clientX;
+    e.preventDefault(); // працює, бо passive:false
+  }
+
+  function onTouchEnd() {
+    if (!isDragging) return;
+
+    const diff = startX - currentX;
+    const threshold = 40;
+
+    if (diff > threshold && index < slides.length - 1) index++;
+    else if (diff < -threshold && index > 0) index--;
+
+    update();
+    isDragging = false;
+  }
+
+  // FIX: ТІЛЬКИ touch, І ТІЛЬКИ passive:false
+  track.addEventListener("touchstart", onTouchStart, { passive: false });
+  track.addEventListener("touchmove", onTouchMove, { passive: false });
+  track.addEventListener("touchend", onTouchEnd);
+
+  // Захист від drag на відео
+  document.querySelectorAll(".slide video").forEach(v => {
+    v.setAttribute("playsinline", "");
+    v.addEventListener("dragstart", e => e.preventDefault());
+  });
+
+  update();
+})();
+
+</script>
+
 
     <!-- FIREBASE -->
     <script type="module">
@@ -612,91 +667,6 @@
             document.getElementById("commentForm").reset();
         });
     </script>
-
-   <script>
-  (function () {
-    const track = document.querySelector(".carousel-track");
-    const slides = document.querySelectorAll(".slide");
-    let index = 0;
-
-    let startX = 0;
-    let currentX = 0;
-    let isDragging = false;
-
-    function update() {
-      track.style.transform = `translateX(-${index * 100}%)`;
-    }
-
-    // TOUCH START
-    function onTouchStart(e) {
-      startX = e.touches ? e.touches[0].clientX : e.clientX;
-      currentX = startX; // важливо: щоб diff не став NaN, якщо move не відпрацював
-      isDragging = true;
-    }
-
-    // TOUCH MOVE
-    function onTouchMove(e) {
-      if (!isDragging) return;
-      // дозволяємо відміняти дефолт, тому добавлений passive:false при підписці
-      const x = e.touches ? e.touches[0].clientX : e.clientX;
-      currentX = x;
-      e.preventDefault && e.preventDefault(); // зупиняємо скрол сторінки під час свайпу
-    }
-
-    // TOUCH END / CANCEL
-    function onTouchEnd() {
-      if (!isDragging) return;
-      const diff = startX - currentX;
-
-      // поріг для свайпу — підправляй як потрібно
-      const threshold = 40;
-
-      if (diff > threshold && index < slides.length - 1) {
-        index++;
-      } else if (diff < -threshold && index > 0) {
-        index--;
-      }
-      update();
-      isDragging = false;
-      startX = currentX = 0;
-    }
-
-    // Підписуємося з правильними опціями (passive:false для touchmove)
-    track.addEventListener("touchstart", onTouchStart, { passive: true });
-    track.addEventListener("touchmove", onTouchMove, { passive: false });
-    track.addEventListener("touchend", onTouchEnd);
-    track.addEventListener("touchcancel", onTouchEnd);
-
-    // Запасний варіант — Pointer events для кращої сумісності
-    track.addEventListener("pointerdown", (e) => {
-      startX = e.clientX;
-      currentX = startX;
-      isDragging = true;
-      track.setPointerCapture && track.setPointerCapture(e.pointerId);
-    });
-    track.addEventListener("pointermove", (e) => {
-      if (!isDragging) return;
-      currentX = e.clientX;
-      e.preventDefault && e.preventDefault();
-    }, { passive: false });
-    track.addEventListener("pointerup", onTouchEnd);
-    track.addEventListener("pointercancel", onTouchEnd);
-
-    // додаткова функція: свайп може починатися на video — переконаємось що video не "краде" події
-    // НЕ робимо pointer-events:none тут, бо хочеш контролів. Натомість додаємо playsinline і disableRemotePlayback
-    document.querySelectorAll(".slide video").forEach(v => {
-      v.setAttribute("playsinline", "");
-      v.setAttribute("webkit-playsinline", "");
-      v.setAttribute("disableRemotePlayback", "");
-      // optional: щоб не починав drag
-      v.addEventListener("dragstart", (e) => e.preventDefault());
-    });
-
-    // Ініціалізація позиції
-    update();
-  })();
-</script>
-
 </body>
 
 </html>
