@@ -527,37 +527,41 @@
     </script>
 
 <script>
-    const track = document.querySelector(".carousel-track");
-    const slides = document.querySelectorAll(".slide");
+   const track = document.querySelector(".carousel-track");
+const slides = document.querySelectorAll(".slide");
 
-    let currentSlide = 0;
-    let startX = 0;
-    let isDragging = false;
+let index = 0;
+let startX = 0;
+let currentX = 0;
+let isDragging = false;
 
-    function updateSlidePosition() {
-        track.style.transform = `translateX(-${currentSlide * 100}%)`;
-    }
+function update() {
+    track.style.transform = `translateX(-${index * 100}%)`;
+}
 
-    track.addEventListener("touchstart", (e) => {
-        startX = e.touches[0].clientX;
-        isDragging = true;
-    });
+track.addEventListener("touchstart", (e) => {
+    startX = e.touches[0].clientX;
+    isDragging = true;
+});
 
-    track.addEventListener("touchend", (e) => {
-        if (!isDragging) return;
-        isDragging = false;
+track.addEventListener("touchmove", (e) => {
+    if (!isDragging) return;
+    currentX = e.touches[0].clientX;
+    e.preventDefault(); // 🔥 ГОЛОВНЕ! дає свайпу працювати на телефоні
+});
 
-        const endX = e.changedTouches[0].clientX;
-        const diff = startX - endX;
+track.addEventListener("touchend", () => {
+    if (!isDragging) return;
 
-        if (diff > 50 && currentSlide < slides.length - 1) {
-            currentSlide++;
-        } else if (diff < -50 && currentSlide > 0) {
-            currentSlide--;
-        }
+    const diff = startX - currentX;
 
-        updateSlidePosition();
-    });
+    if (diff > 40 && index < slides.length - 1) index++;
+    if (diff < -40 && index > 0) index--;
+
+    update();
+    isDragging = false;
+});
+
 </script>
 
 
