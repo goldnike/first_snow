@@ -4,15 +4,15 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>КОНИКИ</title>
+    <title>Перший сніг</title>
 </head>
 <style>
     body {
         margin: 0;
         padding: 0;
-        background: linear-gradient(160deg, #f8e6d2, #f2d2b6, #ffe8cc);
+        background: linear-gradient(160deg, #e6f3ff, #dcecff, #f5f9ff);
         font-family: "Playfair Display", serif;
-        color: #5a3321;
+        color: #2f3b4a;
         text-align: center;
     }
 
@@ -21,20 +21,20 @@
         font-size: 23px;
         letter-spacing: 1px;
         font-weight: 600;
-        color: #8a4b2a;
-        text-shadow: 0 3px 10px rgba(150, 80, 40, 0.25);
+        color: #35506b;
+        text-shadow: 0 3px 10px rgba(90, 130, 170, 0.25);
         display: flex;
         justify-content: center;
         align-items: center;
         gap: 10px;
-        background: rgba(255, 240, 230, 0.9);
-        border: 1px solid rgba(255, 200, 170, 0.6);
+        background: rgba(240, 250, 255, 0.9);
+        border: 1px solid rgba(190, 210, 240, 0.6);
         margin: 15px;
         border-radius: 15px;
     }
 
     .title-page_general {
-        color: #000;
+        color: #1e2a38;
     }
 
     .carousel {
@@ -43,10 +43,11 @@
         overflow: hidden;
         border-radius: 28px;
         position: relative;
-        border: 3px solid rgba(255, 220, 180, 0.8);
-        box-shadow: 0 15px 40px rgba(180, 120, 80, 0.35),
-            0 0 25px rgba(250, 200, 150, 0.4);
-        background: rgba(255, 240, 220, 0.65);
+        border: 3px solid rgba(210, 230, 255, 0.8);
+        box-shadow:
+            0 15px 40px rgba(120, 150, 190, 0.35),
+            0 0 25px rgba(180, 210, 255, 0.4);
+        background: rgba(235, 245, 255, 0.65);
         backdrop-filter: blur(6px);
     }
 
@@ -89,24 +90,24 @@
         inset: 0;
         pointer-events: none;
         box-shadow:
-            0 0 40px rgba(255, 210, 180, 0.35) inset,
-            0 0 25px rgba(255, 180, 140, 0.4) inset;
+            0 0 40px rgba(200, 220, 255, 0.35) inset,
+            0 0 25px rgba(180, 210, 255, 0.4) inset;
     }
 
     .comment-box {
         max-width: 600px;
         margin: 35px auto;
         padding: 20px;
-        background: rgba(255, 240, 225, 0.75);
+        background: rgba(240, 248, 255, 0.75);
         border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(180, 130, 90, 0.35);
-        border: 2px solid rgba(255, 210, 180, 0.8);
+        box-shadow: 0 10px 30px rgba(150, 180, 220, 0.35);
+        border: 2px solid rgba(210, 230, 255, 0.8);
         backdrop-filter: blur(6px);
     }
 
     .comment-box h2 {
         font-family: "Playfair Display", serif;
-        color: #8a4b2a;
+        color: #35506b;
         margin-bottom: 10px;
     }
 
@@ -116,11 +117,11 @@
         margin-top: 10px;
         padding: 12px;
         border-radius: 12px;
-        border: 1px solid rgba(160, 100, 60, 0.35);
-        background: rgba(255, 250, 245, 0.8);
+        border: 1px solid rgba(130, 160, 200, 0.35);
+        background: rgba(255, 255, 255, 0.8);
         font-size: 16px;
         font-family: "Playfair Display", serif;
-        color: #5a3321;
+        color: #2f3b4a;
     }
 
     #commentText {
@@ -133,17 +134,17 @@
         padding: 10px 22px;
         border-radius: 14px;
         border: none;
-        background: #f4c49c;
-        color: #5a3321;
+        background: #bcd9ff;
+        color: #2f3b4a;
         font-size: 17px;
         cursor: pointer;
         font-family: "Playfair Display", serif;
         transition: 0.3s;
-        box-shadow: 0 4px 15px rgba(180, 120, 80, 0.3);
+        box-shadow: 0 4px 15px rgba(120, 150, 190, 0.3);
     }
 
     button:hover {
-        background: #e9b587;
+        background: #aaccff;
     }
 
     .comments-list {
@@ -152,8 +153,8 @@
     }
 
     .comment-item {
-        background: rgba(255, 240, 230, 0.9);
-        border: 1px solid rgba(255, 200, 170, 0.6);
+        background: rgba(240, 248, 255, 0.9);
+        border: 1px solid rgba(200, 220, 250, 0.6);
         padding: 15px;
         margin: 15px;
         border-radius: 15px;
@@ -162,7 +163,7 @@
 
     .comment-meta {
         font-size: 14px;
-        color: #8a4b2a;
+        color: #35506b;
         margin-bottom: 5px;
     }
 
@@ -170,10 +171,10 @@
         max-width: 600px;
         margin: 35px 15px 60px;
         padding: 25px;
-        background: rgba(255, 240, 225, 0.75);
+        background: rgba(240, 248, 255, 0.75);
         border-radius: 20px;
-        box-shadow: 0 10px 30px rgba(180, 130, 90, 0.35);
-        border: 2px solid rgba(255, 210, 180, 0.8);
+        box-shadow: 0 10px 30px rgba(150, 180, 220, 0.35);
+        border: 2px solid rgba(210, 230, 255, 0.8);
         backdrop-filter: blur(6px);
         display: flex;
         flex-direction: column;
@@ -185,18 +186,18 @@
         padding: 14px;
         font-size: 17px;
         border-radius: 14px;
-        border: 1px solid rgba(160, 100, 60, 0.35);
-        background: rgba(255, 250, 245, 0.9);
+        border: 1px solid rgba(130, 160, 200, 0.35);
+        background: rgba(255, 255, 255, 0.9);
+        color: #2f3b4a;
         font-family: "Playfair Display", serif;
-        color: #5a3321;
         outline: none;
         transition: 0.25s ease;
     }
 
     #commentForm input:focus,
     #commentForm textarea:focus {
-        border-color: rgba(200, 140, 90, 0.8);
-        box-shadow: 0 0 12px rgba(230, 170, 120, 0.45);
+        border-color: rgba(130, 160, 200, 0.35);
+        box-shadow: 0 0 12px rgba(130, 160, 200, 0.35);
     }
 
     #commentForm textarea {
@@ -209,8 +210,8 @@
         padding: 12px 25px;
         border-radius: 16px;
         border: none;
-        background: #f4c49c;
-        color: #5a3321;
+        background: #bcd9ff;
+        color: #2f3b4a;
         font-size: 18px;
         cursor: pointer;
         font-family: "Playfair Display", serif;
@@ -219,23 +220,25 @@
     }
 
     #commentForm button:hover {
-        background: #e9b587;
+        background: #aaccff;
         transform: translateY(-2px);
     }
 
     #commentForm button:active {
         transform: translateY(0);
-        box-shadow: 0 2px 8px rgba(180, 120, 80, 0.25);
+        box-shadow: 0 0 12px rgba(130, 160, 200, 0.35);
     }
 
-.slide video {
-    position: relative;
-    z-index: 5;
-    background-color: #000; /* важливо для Safari */
-}
-.carousel-arrow {
-    z-index: 10;
-}
+    .slide video {
+        position: relative;
+        z-index: 5;
+        background-color: #aaccff;
+        /* важливо для Safari */
+    }
+
+    .carousel-arrow {
+        z-index: 10;
+    }
 
 
 
@@ -244,342 +247,361 @@
 
 
     .carousel {
-    position: relative;
-    overflow: hidden;
-}
+        position: relative;
+        overflow: hidden;
+    }
 
-.carousel-track {
-    display: flex;
-    transition: transform 0.35s ease;
-}
+    .carousel-track {
+        display: flex;
+        transition: transform 0.35s ease;
+    }
 
-.slide {
-    min-width: 100%;
-}
+    .slide {
+        min-width: 100%;
+    }
 
-.carousel-arrow {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background: rgba(0,0,0,0.5);
-    color: #fff;
-    border: none;
-    padding: 12px 16px;
-    font-size: 28px;
-    cursor: pointer;
-    border-radius: 8px;
-    z-index: 10;
-    user-select: none;
-}
+    .carousel-arrow {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        background: rgba(0, 0, 0, 0.5);
+        color: #fff;
+        border: none;
+        padding: 12px 16px;
+        font-size: 28px;
+        cursor: pointer;
+        border-radius: 8px;
+        z-index: 10;
+        user-select: none;
+    }
 
-.carousel-arrow.left {
-    left: 10px;
-}
+    .carousel-arrow.left {
+        left: 10px;
+    }
 
-.carousel-arrow.right {
-    right: 10px;
-}
-
+    .carousel-arrow.right {
+        right: 10px;
+    }
 </style>
 
 <body>
     <h1 class="title-page">
-        <p class="title-page_general">Подія:</p>Коники 31.10.25
+        <p class="title-page_general">Подія:</p>Перший сніг 21.11.25
     </h1>
     <div class="carousel">
         <button class="carousel-arrow left">&#10094;</button>
 
         <div class="carousel-track">
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892930/IMG_6414_u3rsdh.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764502914/IMG_6497_pmmi2m.jpg"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895254/IMG_8432_1_njglug.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892954/IMG_8435_n8ko2n.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501377/IMG_0156_2_result_rdeoeu.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892949/IMG_8436_i4toik.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501375/IMG_0149_2_result_vuwvlw.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892949/IMG_8437_gscpw7.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501377/IMG_0152_2_result_lfgnig.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892953/IMG_8439_l7rkoc.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501376/IMG_0151_2_result_emcjmw.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763892965/IMG_8446_mump2c.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892933/IMG_8449_jzgdqg.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501375/IMG_0150_2_result_voteeg.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892947/IMG_8447_jdikuk.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501375/IMG_0148_2_result_qozj0v.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892932/IMG_8450_h01ir2.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501374/IMG_0147_2_result_alcyt5.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763893280/IMG_8451_dipcyt.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892942/IMG_8452_ds6ckv.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501374/IMG_0146_2_result_egadnw.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892942/IMG_8457_gmjcpy.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501367/IMG_0130_result_n6na0x.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892940/IMG_8459_s65ger.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501366/IMG_0129_result_md2gyb.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892930/IMG_8477_xk0ruw.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501366/IMG_0128_result_dluyhl.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892942/IMG_8478_kmjhpp.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501366/IMG_0127_result_iwqvro.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892942/IMG_8504_rkdqxh.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501365/IMG_0126_result_u54fhi.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895224/IMG_8505_fcmz4m.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895188/IMG_8506_sr0clu.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763893596/IMG_8507_gsue14.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763893285/IMG_8508_yvt30u.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892945/IMG_8509_r7olmm.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501365/IMG_0125_result_qqo8xy.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895229/IMG_8512_nid54w.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763892955/IMG_8513_g43jrl.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892944/IMG_8514_zuml5b.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501363/IMG_0120_result_got0qj.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895191/IMG_8515_swdebu.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892947/IMG_8516_wia6vm.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501363/IMG_0121_result_eailhq.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763892956/IMG_8520_fpnoh0.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895239/IMG_8521_xkxsdi.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763893294/IMG_8522_ujqxnf.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895674/IMG_8523_1_fwnsdx.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895684/IMG_8524_1_aj6s1j.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895911/IMG_8525_1_saodnc.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895196/IMG_8526_xerlxi.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763892961/IMG_8527_dvcpsz.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763892958/IMG_8528_jrwbrx.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895226/IMG_8529_ukz9hb.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895190/IMG_8530_q6yqal.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895192/IMG_8531_vhymgn.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895221/IMG_8532_rftpts.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763893287/IMG_8533_bn7z3f.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895287/IMG_5838_wunrbl.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895229/IMG_5839_faqlek.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892947/IMG_8566_aa9yes.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501363/IMG_0119_result_vrvajb.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892952/IMG_8543_e46rdt.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501363/IMG_0124_result_fczbep.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763893299/IMG_8574_hum4en.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763892942/IMG_8575_qmgxcq.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763904864/IMG_5840_f734pq.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501363/IMG_0122_result_zzqqte.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895289/IMG_5845_mhs2jc.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892935/IMG_5846_yhe7b0.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501362/IMG_0123_result_s4cbnu.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895679/IMG_5849_srfsqv.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895240/IMG_5850_iouqh8.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892953/IMG_8576_udgafw.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501362/IMG_0114_2_result_eqsagi.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892951/IMG_8580_kslaot.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501362/IMG_0113_2_result_uvo1mi.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892945/IMG_8589_x93xv9.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501362/IMG_0115_2_result_c2hi8e.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895687/IMG_8591_1_v1ekd4.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895235/IMG_8592_kuuknn.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763892963/IMG_8593_rdpb9v.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763892964/IMG_8594_bryrsi.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895241/IMG_8595_nzqw38.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763892955/IMG_8596_hwrxgs.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763892961/IMG_8597_pjn6yq.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763893060/IMG_8598_p5ieow.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763893297/IMG_8599_vkqk9p.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763895229/IMG_8600_rpeqtm.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763892962/IMG_8601_vpezld.mp4"
-                    controls></video>
-            </div>
-            <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892941/IMG_8615_p1gjy8.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501362/IMG_0116_result_kx2koy.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892950/IMG_8617_mazdea.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501362/IMG_0117_result_dmpqib.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892944/IMG_8618_clolv7.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501362/IMG_0112_result_x3efjv.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892946/IMG_8619_qh5oho.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501374/IMG_0143_2_result_gfsz7h.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892931/IMG_8620_xzv6ei.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501372/IMG_0142_2_result_sl7ylz.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1763892946/IMG_8622_bsrrvo.jpg"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501372/IMG_0141_2_result_gjvwaw.webp"
                     alt="Photo" />
             </div>
             <div class="slide">
-                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1763893284/IMG_8624_dtlxuq.mp4"
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501372/IMG_0140_2_result_bxodxc.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501371/IMG_0139_2_result_m6ke4l.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501371/IMG_0138_2_result_jsfsjk.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501371/IMG_0136_2_result_tmfudd.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501371/IMG_0137_2_result_skkd3u.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501371/IMG_0135_2_result_oyky8r.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501367/IMG_0134_result_fo3mbp.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501367/IMG_0133_result_y1wftt.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501379/IMG_0174_2_result_wn7otd.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501378/IMG_0170_2_result_oxbbmj.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501377/IMG_0159_2_result_iow5zt.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501377/IMG_0158_2_result_achl8r.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501377/IMG_0157_2_result_etpflr.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501380/IMG_0175_2_result_utgrzz.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501379/IMG_0176_2_result_atzemt.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501380/IMG_0177_2_result_bdhmgq.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501381/IMG_0178_2_result_w5vdbr.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501381/IMG_0179_2_result_krl6yh.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501381/IMG_0180_2_result_at8lhs.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501382/IMG_0181_2_result_lxqfvi.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501382/IMG_0182_2_result_fy8qzn.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501382/IMG_0183_2_result_nkf5x4.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <img src="https://res.cloudinary.com/dcfqttv0v/image/upload/v1764501382/IMG_0184_2_result_yvsjvk.webp"
+                    alt="Photo" />
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764501974/IMG_0172_wvb3df.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764501975/IMG_0118_wwi88a.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764501975/IMG_0163_h1nfxd.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764501978/IMG_0161_zpkhg7.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764501980/IMG_0108_jfxbre.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764501981/IMG_0132_zimzxh.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764501982/IMG_0160_kc1a09.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764501983/IMG_0171_xqpsiu.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764501983/IMG_0153_nfhlig.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764501985/IMG_0131_qmq2kb.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764501988/IMG_0164_cjqd8w.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764501989/IMG_0173_a1rb7h.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764502005/IMG_0107_1_snpxjp.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764502007/IMG_0155_olmnhv.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764502008/IMG_0167_ueeco8.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764502014/IMG_0165_gxusa4.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764502014/IMG_0168_c8y7dk.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764502017/IMG_0166_htfdit.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764502022/IMG_0111_rcvyyh.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764502025/IMG_0144_jul3cq.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764502024/IMG_0162_d76yhc.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764502030/IMG_0110_atdx8s.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764502033/IMG_0109_p3q6mr.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764502038/IMG_0154_muqhn7.mp4"
+                    controls></video>
+            </div>
+            <div class="slide">
+                <video src="https://res.cloudinary.com/dcfqttv0v/video/upload/v1764502039/IMG_0145_ckvpji.mp4"
                     controls></video>
             </div>
         </div>
@@ -593,30 +615,30 @@
         <textarea id="comment" placeholder="Ваш коментар" required></textarea>
         <button type="submit">Відправити</button>
     </form>
-   <script>
-    const track = document.querySelector(".carousel-track");
-    const slides = document.querySelectorAll(".slide");
-    const btnLeft = document.querySelector(".carousel-arrow.left");
-    const btnRight = document.querySelector(".carousel-arrow.right");
+    <script>
+        const track = document.querySelector(".carousel-track");
+        const slides = document.querySelectorAll(".slide");
+        const btnLeft = document.querySelector(".carousel-arrow.left");
+        const btnRight = document.querySelector(".carousel-arrow.right");
 
-    let index = 0;
+        let index = 0;
 
-    function update() {
-        track.style.transform = `translateX(-${index * 100}%)`;
-    }
+        function update() {
+            track.style.transform = `translateX(-${index * 100}%)`;
+        }
 
-    btnRight.addEventListener("click", () => {
-        if (index < slides.length - 1) index++;
+        btnRight.addEventListener("click", () => {
+            if (index < slides.length - 1) index++;
+            update();
+        });
+
+        btnLeft.addEventListener("click", () => {
+            if (index > 0) index--;
+            update();
+        });
+
         update();
-    });
-
-    btnLeft.addEventListener("click", () => {
-        if (index > 0) index--;
-        update();
-    });
-
-    update();
-</script>
+    </script>
 
 
 
@@ -635,7 +657,7 @@
         const app = initializeApp(firebaseConfig);
         const db = getDatabase(app);
 
-        const listRef = ref(db, "comments");
+        const listRef = ref(db, "comments_project2");
 
         // ==== ВИВЕДЕННЯ КОМЕНТАРІВ ЗАВЖДИ ====
         onValue(listRef, (snapshot) => {
